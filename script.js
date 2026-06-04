@@ -1,0 +1,1 @@
+console.log("Website portfolio berhasil jalan!");
