@@ -954,3 +954,56 @@ nav a:hover {
   }
 }
 
+/* FIX PROJECT CARD HEIGHT BIAR SAMA */
+.projects-container {
+  align-items: stretch;
+}
+
+.project-card {
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-img {
+  height: 180px;
+  flex-shrink: 0;
+}
+
+.project-card p {
+  flex-grow: 0;
+}
+
+.project-card .desktop-note {
+  min-height: 95px;
+}
+
+.project-card a,
+.btn-project {
+  margin-top: auto;
+  width: fit-content;
+}
+
+/* khusus card coming soon biar tetap balance */
+.project-card .soon-text {
+  min-height: 95px;
+}
+
+/* FIX CARD 3 BIAR NGGAK IKUT KEPANJANGAN */
+.projects-container {
+  align-items: start !important;
+}
+
+.project-card:nth-child(3) {
+  min-height: auto !important;
+  height: auto !important;
+  align-self: start !important;
+}
+
+.project-card:nth-child(3) .soon-text {
+  min-height: auto !important;
+}
+
+.project-card:nth-child(3) .project-img {
+  height: 180px !important;
+}
